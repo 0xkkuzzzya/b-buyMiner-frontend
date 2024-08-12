@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+const MainContainer = styled.div`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 const Conrainer = styled.div`
     width: 400px;
     height: 400px;
@@ -85,21 +93,23 @@ const ConfirmButton = styled.button`
 
 export const BuyMiner = () => {
     return (
-        <Conrainer>
-            <Header>
-                <MainText>Buy Bytecoin NFT Miners</MainText>
-                <Description>Get NFT Miners to mine Bytecoin using <br /> @bytecoin bot on Telegram</Description>
-            </Header>
-            <div style={{ width: "90%", marginTop: "30px" }}>
-                <Text>Choose quanity of NFT Miners</Text>
-            </div>
-            <InputContainer>
-                <Input placeholder="Enter amount from 1 to 100" />
-            </InputContainer>
-            <div style={{ width: "90%", marginTop: "15px" }}>
-                <PriceText>1 NFT = 48 TON</PriceText>
-            </div>
-            <ConfirmButton>Buy NFT Miners</ConfirmButton>
-        </Conrainer>
+        <MainContainer>
+            <Conrainer>
+                <Header>
+                    <MainText>Buy Bytecoin NFT Miners</MainText>
+                    <Description>Get NFT Miners to mine Bytecoin using <br /> @bytecoin bot on Telegram</Description>
+                </Header>
+                <div style={{ width: "90%", marginTop: "30px" }}>
+                    <Text>Choose quanity of NFT Miners</Text>
+                </div>
+                <InputContainer>
+                    <Input placeholder="Enter amount from 1 to 100" />
+                </InputContainer>
+                <div style={{ width: "90%", marginTop: "15px" }}>
+                    <PriceText>1 NFT = 48 TON</PriceText>
+                </div>
+                <ConfirmButton>Buy NFT Miners</ConfirmButton>
+            </Conrainer>
+        </MainContainer>
     )
 }
