@@ -4,6 +4,7 @@ import { Header } from "./components/Heder";
 
 const AppContainer = styled.div`
 	width: 800px;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12,6 +13,10 @@ const AppContainer = styled.div`
 	@media (max-width: 800px) {
 		width: 100%;
 	}
+	@media (max-height: 600px) {
+        height: 100%;
+        margin-bottom: 30px;
+    }
 `
 
 

@@ -1,20 +1,23 @@
 import styled from "styled-components";
+import BytecoinLogo from '../assets/BytecoinLogo.png'
 
 const MainContainer = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    @media (max-height: 600px) {
+        height: 100%;
+        margin-bottom: 50px;
+    }
 `
 
 const Conrainer = styled.div`
     width: 400px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-top: 40px;
 `
 
 const Header = styled.div`
@@ -90,11 +93,18 @@ const ConfirmButton = styled.button`
     font-weight: 500;
 `
 
+const Logo = styled.img`
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+`
+
 
 export const BuyMiner = () => {
     return (
         <MainContainer>
             <Conrainer>
+            <Logo src={BytecoinLogo}/>
                 <Header>
                     <MainText>Buy Bytecoin NFT Miners</MainText>
                     <Description>Get NFT Miners to mine Bytecoin using <br /> @bytecoin bot on Telegram</Description>
